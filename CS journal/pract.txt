@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+
+class reverse
+{
+	int m;
+	public:
+		reverse()
+		{
+			cout<<"enter m";
+			cin>>m;
+		
+			int n=0;			
+			while(m>0)
+			{
+				n= n*10+ m%10;
+				m=m/10;
+			}
+			cout<<"the reverse is "<<n;
+		}
+};
+int main()
+{
+	reverse rno;
+}
+
+
+// x1 / 1!- x3/ 3! + x5/ 5! - x7/ 7!
+#include<iostream>
+using namespace std;
+class sinxseries
+{
+	int m;
+	public:
+		void fact(int no)
+		{
+			int f= 1; 
+			for(int i = 1 ; i <=no; i++)
+			   f= f*i;
+			
+			return f;
+		}
+		sinxseries()
+		{
+			cout<<"enter x an n ";
+			cin>>x>>n;
+			
+			float sum=0;
+					int k=1;	
+			for(int= 1; i<=2n; i = i+2 )
+             {
+             	sum = sum + pow(x, i)*k  / fact(i);
+             	k=-k;
+			 }
+			 cout<<"the sum of series is "<<sum;
+		}
+	};
+	int main()
+	{
+		sinxseries s;
+	}
